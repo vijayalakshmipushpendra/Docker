@@ -1,0 +1,4 @@
+FROM  openjdk:11
+EXPOSE 8081
+ADD target/docker-0.0.1-SNAPSHOT.jar spring-boot-docker
+ENTRYPOINT [ "java" , "-jar" ,"docker-0.0.1-SNAPSHOT.jar"]
